@@ -2,7 +2,7 @@
 test using git
 
 ## Step
-### 1 create master.js to master branch
+### 1.create master.js to master branch
 ```bash
 $ git branch 
 $ git status
@@ -18,7 +18,7 @@ Result
 # master.js
 ```
 
-### 2 create slave.js to slave branch
+### 2.create slave.js to slave branch
 ```bash
 $ git checkout -b "slave"
 $ git status
@@ -35,7 +35,7 @@ Result
 # slave.js
 ```
 
-### 3 pull slave to master
+### 3.pull slave to master
 ```bash
 $ git checkout master
 $ git status
@@ -47,4 +47,10 @@ $ git status
 # master.js
 # slave.js
 $ git push
+```
+Result
+```bash
+# READEME.md (update from slave)
+# master.js
+# slave.js (update from slave)
 ```
