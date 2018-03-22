@@ -54,3 +54,20 @@ Result
 # master.js
 # slave.js (update from slave)
 ```
+
+### 4.pull master to slave
+```bash
+$ git checkout slave
+$ git status
+# same last time
+$ git pull origin master
+# update last content from master
+$ nano READEME.md
+$ nano slave.js
+$ git status
+# modified: slave.js
+$ git add .
+$ commit -m "pull master to slave and update"
+$ git pull
+$ git push
+```
