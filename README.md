@@ -34,3 +34,17 @@ Result
 # master.js
 # slave.js
 ```
+
+### 3 pull slave to master
+```bash
+$ git checkout master
+$ git status
+# READEME.md
+# master.js
+$ git pull origin slave
+$ git status
+# READEME.md
+# master.js
+# slave.js
+$ git push
+```
